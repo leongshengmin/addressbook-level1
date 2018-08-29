@@ -1058,13 +1058,8 @@ public class AddressBook {
      * @param phone to be validated
      */
     private static boolean isPersonPhoneValid(String phone) {
-<<<<<<< HEAD
         return phone.matches("^\\+65(6|8|9)\\d{7}$");    // phone nonempty sequence of digits
         // TODO: tests for phone validation
-=======
-        return phone.matches("\\d+");    // phone nonempty sequence of digits
-        //TODO: implement a more permissive validation
->>>>>>> 13daa30527fb541e6e7d073ec308537d1f21d871
     }
 
     /**
@@ -1074,13 +1069,8 @@ public class AddressBook {
      * @return whether arg is a valid person email
      */
     private static boolean isPersonEmailValid(String email) {
-<<<<<<< HEAD
         return email.matches("(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])");
         //TODO: tests for email validation
-=======
-        return email.matches("\\S+@\\S+\\.\\S+"); // email is [non-whitespace]@[non-whitespace].[non-whitespace]
-        //TODO: implement a more permissive validation
->>>>>>> 13daa30527fb541e6e7d073ec308537d1f21d871
     }
 
 
