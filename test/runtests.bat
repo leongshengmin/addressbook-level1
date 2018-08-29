@@ -1,5 +1,11 @@
 @ECHO OFF
 
+<<<<<<< HEAD
+=======
+REM change current directory to the location of this script
+pushd %~dp0
+
+>>>>>>> 13daa30527fb541e6e7d073ec308537d1f21d871
 REM create bin directory if it doesn't exist
 if not exist ..\bin mkdir ..\bin
 
@@ -7,6 +13,11 @@ REM compile the code into the bin folder
 javac  ..\src\seedu\addressbook\Addressbook.java -d ..\bin
 IF ERRORLEVEL 1 (
     echo ********** BUILD FAILURE ********** 
+<<<<<<< HEAD
+=======
+    REM return to previous directory
+    popd
+>>>>>>> 13daa30527fb541e6e7d073ec308537d1f21d871
     exit /b 1
 )
 REM no error here, errorlevel == 0
@@ -28,3 +39,9 @@ java -classpath ..\bin seedu.addressbook.AddressBook < input.txt >> actual.txt
 
 REM compare the output to the expected output
 FC actual.txt expected.txt
+<<<<<<< HEAD
+=======
+
+REM return to previous directory
+popd
+>>>>>>> 13daa30527fb541e6e7d073ec308537d1f21d871
