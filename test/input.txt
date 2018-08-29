@@ -16,7 +16,6 @@
 ##########################################################
 # test add person command, setup state for futuer tests
 ##########################################################
-
   # should catch invalid args format
   add wrong args wrong args
   add Valid Name p/12345 valid@email.butNoPrefix
@@ -28,17 +27,17 @@
   add Valid Name p/12345 e/notAnEmail
 
   # should add correctly
-  add Adam Brown p/111111 e/adam@gmail.com
+  add Adam Brown p/93334878 e/adam@gmail.com
   list
-  add Betsy Choo p/222222 e/benchoo@nus.edu.sg
+  add Betsy Choo p/82224888 e/benchoo@nus.edu.sg
   list
 
   # order of phone and email should not matter
-  add Charlie Dickson e/charlie.d@nus.edu.sg p/333333
+  add Charlie Dickson e/charlie.d@nus.edu.sg p/99999999
   list
-  add Dickson Ee e/dickson@nus.edu.sg p/444444
+  add Dickson Ee e/dickson@nus.edu.sg p/88888888
   list
-  add Esther Potato p/555555 e/esther@notreal.potato
+  add Esther Potato p/99999999 e/esther@notreal.potato
   list
 
 ##########################################################
